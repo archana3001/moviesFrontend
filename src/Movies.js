@@ -5,11 +5,11 @@ import SingleMovie from './SingleMovie'
 import './Styles/Movies.css'
 
 function Movies() {
-    const [name, update] = useGlobalContext()
+    const [name, update, search] = useGlobalContext()
     // console.log(name)
     return (
         <>
-            <h1>Most Recent Movies</h1>
+            <h1>{search}</h1>
             <div className='movies-main'>{
                 name.map((curr) => {
                     return (<SingleMovie curr={curr} key={curr.id} />)

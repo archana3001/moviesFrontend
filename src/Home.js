@@ -31,7 +31,7 @@ function Home() {
                         placeholder='Search for a movie' />
                 </div>
             </div>
-            {search}
+
             <Movies />
         </div>
     )
