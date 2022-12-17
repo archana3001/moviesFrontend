@@ -1,0 +1,79 @@
+.normal-card {
+  border: 1px solid grey;
+  margin: 2px;
+  width: 282px;
+  height: 348px;
+  border: 1px solid #e1e3e6;
+  box-shadow: 1px 2px 8px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.normal-card-img {
+  /* border: 1px solid grey; */
+  width: 282px;
+  height: 304px;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+
+.normal-card-title {
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.normal-card-rate {
+  background-color: aliceblue;
+  height: 30px;
+  width: 30px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border: 1px solid black;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.centre-card {
+  width: 50%;
+  height: 65%;
+  background-color: aliceblue;
+  position: relative;
+}
+
+.centre-card-img {
+  height: 70%;
+}
+
+.centre-card button {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centre-back {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  background-color: rgba(124, 122, 122, 0.425);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
