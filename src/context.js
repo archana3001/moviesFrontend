@@ -23,20 +23,20 @@ const AppProvider = ({ children }) => {
             getMovies(API_URL + API_PATH1 + process.env.REACT_APP_SECRET)
         }
         else {// console.log(API_URL + API_PATH + process.env.REACT_APP_SECRET + API_QUERY + val)
-            getMovies(API_URL + API_PATH + process.env.REACT_APP_SECRET + API_QUERY + val)
+            getMovies(API_URL + API_PATH + process.env.REACT_APP_SECRET + API_QUERY + val, val)
         }
 
     }
 
 
-    const getMovies = async (url) => {
+    const getMovies = async (url, val) => {
         try {
             const res = await fetch(url)
             const data = await res.json()
 
 
             if (data.total_pages === 0) {
-
+                setSearch(val + " : No Results")
             } else {
                 setMovies(data.results)
             }
