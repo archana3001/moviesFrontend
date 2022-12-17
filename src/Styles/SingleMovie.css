@@ -1,8 +1,8 @@
 .normal-card {
   border: 1px solid grey;
   margin: 2px;
-  width: 282px;
-  height: 348px;
+  width: 320px;
+  height: 400px;
   border: 1px solid #e1e3e6;
   box-shadow: 1px 2px 8px 2px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
@@ -14,8 +14,8 @@
 
 .normal-card-img {
   /* border: 1px solid grey; */
-  width: 282px;
-  height: 304px;
+  width: 320px;
+  height: 350px;
   background-size: cover;
   position: relative;
   z-index: 1;
@@ -44,8 +44,8 @@
 }
 
 .centre-card {
-  width: 583px;
-  height: 474px;
+  width: 680px;
+  height: 500px;
   background-color: rgb(255, 255, 255);
   position: relative;
   padding-left: 20px;
@@ -89,6 +89,6 @@
 }
 
 .centre-card-text {
-  margin: 15px;
+  margin: 20px;
   margin-right: 40px;
 }
